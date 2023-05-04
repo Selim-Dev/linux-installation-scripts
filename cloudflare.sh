@@ -1,8 +1,7 @@
 #!/bin/bash
 UB(){
     #1- download the pkg from github
-    wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
-
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb
     #2- extract & install the downloaded pkg
     sudo dpkg -i cloudflared-linux-amd64.deb && sudo apt install -f && apt --fix-broken install
 
